@@ -1,0 +1,86 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 32px;
+}
+
+.dish {
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 350px;
+    border: 1px solid #ffb109;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.dish img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.dish-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.dish-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.dish-rate {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.dish-price h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
+.dish-heart {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #ffc505;
+    cursor: pointer;
+}
+
+.dish-heart .fa-heart.active {
+    color: red;
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dish {
+        width: calc(50% - 12px);
+    }
+    
+}

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamburguer</title>
+    <script src="https://kit.fontawesome.com/96bc4ed4ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="testimonials.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="nav-logo" src="img/logo-1.png" alt="logo lanchonete">
+            <ul id="nav-list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">PEÇA AQUI</button>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">PEÇA AQUI</button>
+        </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"> </div>
+            <div id="cta">
+                <h1 class="title"> A melhor <span>LANCHONTE</span> da cidade </h1>
+                <p class="description">Seja para um almoço rápido, um jantar descontraído ou um momento especial com
+                    amigos e família, a Lamburguer é o lugar perfeito para quem busca matar a fome de verdade. Venha nos
+                    visitar e descubra o seu lugar novo favorito!</p>
+
+                <div id="cta-button">
+                    <a href="#menu" class="btn-default">
+                        Ver Cardápio
+                    </a>
+                    <a href='tel:+5512997631961' id="phone-button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+
+                        </button>
+                        (12) 97543-5439
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a id="verde" href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"> <i
+                            class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a id="rosa" href="https://www.instagram.com/" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a id="azul" href="https://www.facebook.com/?locale=pt_BR" target="_blank"> <i
+                            class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="img/lanches.png" alt="lanche">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos lanches</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-1.jpg" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> Sanduíche "Explosão de Sabor" </h3>
+                    <span class="dish-description">
+                        Um delicioso hambúrguer Angus, queijo cheddar cremoso, cebola caramelizada e nosso exclusivo
+                        molho aioli de manjericão, tudo no pão brioche. Acompanha batatas rústicas. Imperdível!
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 24,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-2.jpg" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> X-Bancon </h3>
+                    <span class="dish-description">
+                        É um sanduíche clássico das lanchonetes brasileiras, amado por muitos pela sua combinação de
+                        sabores.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+1500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 23,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-3.jpg" class="dish-star" alt="lanche x-tudo ">
+                    <h3 class="dish-title"> X-Tudo</h3>
+                    <span class="dish-description">
+                        Se a sua fome é grande, o X-Tudo é a pedida certa! Este sanduíche clássico é uma explosão de
+                        sabor e ingredientes, perfeito para saciar qualquer apetite.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+1800)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 28,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-4.jpg" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> Salgados </h3>
+                    <span class="dish-description">
+                        Crocantes por fora e com recheios irresistíveis! Nossos salgados são preparados com carinho e
+                        perfeitos para qualquer hora do dia. Escolha seu sabor favorito!
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 6,50 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-5.jpg" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> Crepioca Recheada com Peito de Peru </h3>
+                    <span class="dish-description">
+                        Que tal uma opção deliciosa e saudável? Nossa Crepioca Recheada com Peito de Peru é perfeita
+                        para quem busca um lanche leve e nutritivo.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+800)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 13,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-6.jpg" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> Sanduíche Natural Fresquinho</h3>
+                    <span class="dish-description">
+                        Delicioso e equilibrado, nosso sanduíche natural é montado na hora com os melhores ingredientes.
+                        Uma opção leve e saborosa para qualquer momento do seu dia!
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(+500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 7,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/lanche-7.png" class="dish-star" alt="lanche">
+                    <h3 class="dish-title"> Sanduíche Natural:</h3>
+                    <span class="dish-description">
+                        A escolha perfeita para quem busca leveza sem abrir mão do sabor! Preparado com ingredientes
+                        frescos e selecionados, é ideal para um lanche saudável e nutritivo.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(+500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 14,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/coca.jpg" class="dish-star" alt="refrigerante">
+                    <h3 class="dish-title"> Coca-Cola</h3>
+                    <span class="dish-description">
+                        O clássico que todo mundo ama! Refrescante e borbulhante, a Coca-Cola é a pedida perfeita para
+                        acompanhar qualquer lanche ou matar a sua sede.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+1200)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 10,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/refri.jpg" class="dish-star" alt="refrigerante">
+                    <h3 class="dish-title"> Refrigerante Guaraná</h3>
+                    <span class="dish-description">
+                        Um clássico brasileiro para refrescar! Nosso Guaraná chega à sua mesa bem gelado, com aquele
+                        sabor único e borbulhante que todo mundo adora.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(+1000)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 6,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/suco-laranja.jpg" class="dish-star" alt="suco-laranja">
+                    <h3 class="dish-title"> Suco natural de Laranja</h3>
+                    <span class="dish-description">
+                        Preparado na hora com laranjas frescas selecionadas. Perfeito para refrescar seu dia.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+900)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 7,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/suco-maracuja.jpg" class="dish-star" alt="suco maracuja">
+                    <h3 class="dish-title"> Suco Natural de Maracujá</h3>
+                    <span class="dish-description">
+                        Preparado na hora com maracujás frescos. Um sabor tropical e refrescante para o seu dia.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(+1000)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 8,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/batata-1.jpg" class="dish-star" alt="batata frita">
+                    <h3 class="dish-title"> Batata Frita</h3>
+                    <span class="dish-description">
+                        Nossas batatas fritas são preparadas na hora, douradinhas e no ponto certo. O acompanhamento
+                        perfeito para qualquer pedido ou um delicioso petisco para saborear sozinho.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(+1500)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 12,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/banofee.jpg" class="dish-star" alt="banofee">
+                    <h3 class="dish-title"> Banofee </h3>
+                    <span class="dish-description">
+                        É uma torta deliciosa e popular, originária da culinária inglesa, conhecida pela sua combinação
+                        irresistível de sabores e texturas.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+800)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 18,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/petit-gateau.jpg" class="dish-star" alt="petit-gateau">
+                    <h3 class="dish-title"> Petit Gateau </h3>
+                    <span class="dish-description">
+                        Que derrete na boca com seu coração de chocolate quente, servido com sorvete cremoso.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+800)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 19,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/torta-de-limao-.jpeg" class="dish-star" alt="torta de limao">
+                    <h3 class="dish-title"> Torta de Limão </h3>
+                    <span class="dish-description">
+                        Refrescância e sabor em cada garfada. É a nossa Torta de Limão!
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(+800)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$: 13,00 </h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="img/logo-2.png" id="testimonials-logo" alt="Logo lanchonete">
+            <div id="testimonials-content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os nossos clientes falam sobre nós
+                </h3>
+                <div id="feedbacks">
+                    <div class="feedbacks">
+                        <img src="img/avatar-1.png" class="feedback-avatar" alt="avatar 1">
+                        <div class="feedback-content">
+                            <p>
+                                Patrick Almeida
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                </span>
+                            </p>
+                            <p>
+                                A comida estava deliciosa, especialmente o hambúrguer, que era suculento e cheio de sabor. O atendimento também foi ótimo, com a equipe muito simpática e atenciosa. Recomendo demais!
+                            </p>
+                        </div>
+                    </div>
+                     <div class="feedbacks">
+                        <img src="img/avatar-2.jpg" class="feedback-avatar" alt="avatar 2">
+                        <div class="feedback-content">
+                            <p>
+                                Joana Machado
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </span>
+                            </p>
+                            <p>
+                                "Sensacional! Cada mordida foi uma explosão de sabor. O combo que pedi veio na medida certa, e o refri estava super gelado, do jeito que eu gosto. O ambiente é super legal e a música perfeita. Virei fã, com certeza volto sempre!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedbacks">
+                        <img src="img/avatar-3.png" class="feedback-avatar" alt="avatar 3">
+                        <div class="feedback-content">
+                            <p>
+                                Ana Paula Palmeiras
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                </span>
+                            </p>
+                            <p>
+                                "Bom custo-benefício. O lanche chegou rápido e estava quentinho. Achei o molho da casa bem gostoso. Para uma refeição rápida e saborosa, cumpre o que promete."
+                            </p>
+                        </div>
+                    </div>
+                     <div class="feedbacks">
+                        <img src="img/avatar-4.png" class="feedback-avatar" alt="avatar 4">
+                        <div class="feedback-content">
+                            <p>
+                                Paulo Lima
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </span>
+                            </p>
+                            <p>
+                                "Salvou meu dia! Cheguei morrendo de fome e fui atendido super bem. O lanche veio gigante e me satisfez completamente. Saí daqui rolando, mas feliz da vida. Lanchonete top para quem quer comer bem e fartamente!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
