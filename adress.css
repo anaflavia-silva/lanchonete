@@ -1,6 +1,6 @@
 #address {
     padding: 60px 40px;
-    background-color: #f8f8f8;
+    background-color: #ffebb8;
     text-align: center;
     color: #333;
 }
@@ -73,7 +73,7 @@
     }
 
     #address .section-subtitle {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
 
